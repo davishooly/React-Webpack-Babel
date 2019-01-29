@@ -34,7 +34,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack-dev-server --open --mode development"
+    "postinstall": "webpack -p",
+    "dev": "webpack-dev-server --open --mode development",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
